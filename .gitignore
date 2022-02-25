@@ -1,0 +1,9 @@
+# dependencies
+/node_modules
+/.idea
+/.vscode
+main
+bin/dist
+dist
+/vendor
+.env
