@@ -60,6 +60,24 @@ constructor(private httpCli:HttpClient) { }
     };
     return this.httpCli.get(`${PRIVATE}recruiters/jobs/${this.getpayload().id}`,httpOptions);
   }
+
+  getprofile()
+{
+  const httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':'application/json',
+      'Authorization': `Bearer${this.gettoken()}`
+    })
+  };
+  return this.httpCli.get(`${PRIVATE}employees/profile/${this.getpayload().id}`,httpOptions);
+}
+
+  uploadprofilepic(fd:any)
+  {
+    return this.httpCli.post(`${PRIVATE}employee/uploadpicture/${this.getpayload().id}`,fd);
+   
+  }
+
   getseekers()
   {
     const httpOptions = {
