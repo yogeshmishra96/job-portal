@@ -7,6 +7,7 @@ import { AppliedEmployeesComponent} from './recruiter/rdashboard/applied-employe
 import { JobsComponent } from './seeker/dashboard/jobs/jobs.component';
 import { AppliedjobsComponent } from './seeker/dashboard/appliedjobs/appliedjobs.component';
 import {LoginComponent} from './Auth/login/login.component';
+import {HomeComponent} from './Auth/Home/home.component';
 import {EmpProfileComponent} from './seeker/emp-profile/emp-profile.component';
 import {RprofileComponent} from './recruiter/rprofile/rprofile.component';
 import { EmploginComponent } from './Auth/login/emplogin/emplogin.component';
@@ -30,6 +31,8 @@ const routes: Routes = [
     {path:'emp_register',component:EmpregisterComponent},
     {path:'rec_register',component:RecruiterregisterComponent}
   ]},
+
+  {path:'home',component:HomeComponent},
   {path:'dashboard',component:DashboardComponent,children:[
   {path:'jobs',component:JobsComponent},
   {path:'appliedjobs',component:AppliedjobsComponent}, 
@@ -72,5 +75,6 @@ export const routingComponents=[RegisComponent,
                                 RprofileComponent,
                                 PostjobComponent,
                                 EditprofileComponent,
-                                SearchComponent
+                                SearchComponent,
+                                HomeComponent
                               ];
