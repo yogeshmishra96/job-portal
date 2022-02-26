@@ -1,14 +1,52 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <h2>Login</h2>
-    <p>Select the respective tabs!!!</p>
-    <ul class="nav nav-tabs">
-      <li class="nav-item ">
-        <a class="nav-link" type="button"  style="cursor:pointer" [ngClass]="tabset ? 'active':'disabled'" (click)="employeeloginpage()">Employee</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " style="cursor:pointer" [ngClass]="tabset?'active':'inactive'" (click)="recruiterloginpage()">Recruiter</a>
-      </li>
-    </ul>
-    <router-outlet></router-outlet>
+  <h1 class="title margin-top">Home Repairs</h1>
+  <div class="home-repairs">  
+    <div class="list">
+      <img src="../../assets/list-1.jpg">
+      <span>Electricians</span>
+    </div>
+    <div class="list">
+      <img src="../../assets/list-2.jpg">
+      <span>Plumbers</span>
+    </div>
+    <div class="list">
+      <img src="../../assets/list-3.jpg">
+      <span>Maid</span>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class="title ">Registration form</h1>
+  <form>    
+    <div class="from">
+      <input type="text" id="firstname" placeholder="First Name">
+    <input type="text" id="lasttname" placeholder="Last Name">
+    </div>
+    <div class="from">
+      <input type="text" id="emialId" placeholder="Emial Id">
+    <input type="text" id="Phone" placeholder="Phone No">
+    </div>
+    <div class="from type-work">      
+      <textarea id="" name="w3review" rows="4" cols="50" placeholder="Type Of Work"></textarea>        
+    </div>
+    <div class="from">      
+      <button type="button" class="btn">Send</button>
+      </div>
+  </form>
+</div>
+<div class="container">
+ <div class="m-t-add">
+  <h2>Login</h2>
+  <p>Select the respective tabs!!!</p>
+  <ul class="nav nav-tabs">
+    <li class="nav-item ">
+      <a class="nav-link" type="button"  style="cursor:pointer" [ngClass]="tabset ? 'active':'disabled'" (click)="employeeloginpage()">Employee</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " style="cursor:pointer" [ngClass]="tabset?'active':'inactive'" (click)="recruiterloginpage()">Recruiter</a>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
+ </div>
   </div>
