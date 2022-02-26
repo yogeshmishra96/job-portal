@@ -38,7 +38,7 @@ export class ForseekerService {
       })
     };
     console.log(httpOptions);
-    return this.httpCli.get(`${PRIVATE}employees/getjobs/${this.getpayload().id}`,httpOptions);
+    return this.httpCli.get(`http://localhost:3000/v1/auth/jobs`,httpOptions);
   }
   searchbycompany(companyname)
   {
