@@ -47,6 +47,23 @@ const verifyEmail = catchAsync(async (req, res) => {
   res.status(httpStatus.NO_CONTENT).send();
 });
 
+const getJobs = catchAsync(async (req, res) => {
+  const data = [
+    {
+      companyName: "habilelabs",
+      jobDetails: {
+        jobRole: "developer",
+        jobType : "deve",
+        skills: ['php', 'go', "js"],
+        expRequired: 2,
+      }
+    }
+
+  ]
+
+  res.status(200).send(data);
+});
+
 module.exports = {
   register,
   login,
@@ -56,4 +73,5 @@ module.exports = {
   resetPassword,
   sendVerificationEmail,
   verifyEmail,
+  getJobs
 };
