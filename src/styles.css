@@ -1,1 +1,135 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: #000;
+  }
+  input:focus{
+    box-shadow: inherit;
+    outline: initial;
+  }
+.bg{
+    background-image: url(/assets/bg.jpg);
+    width: 100%;
+    float: left;
+    height: 500px;
+}
+.nav-color{
+    background: #00000025;
+}
+.search-filed{
+    width: 100%;
+    float: left;
+    margin-top: 5rem;
+}
+.search-filed h1{
+    color: #fff;
+    text-align: center;
+}
+.input-fil{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    height: 55px;
+    margin-top: 2rem;
+}
+.input-fil input {
+    background: #fff;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+.input-fil input:last-child {
+    width: 35rem;
+}
+.server {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-top: 9rem;
+    padding: 25px 10px;
+    min-height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0px 2px #888888;
+    display: flex;
+    justify-content: space-between;
+}
+.m-t-add {
+    margin-top: 6rem;
+    float: left;
+    width: 100%;
+}
+.server li {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+}
+.server li span {
+    font-weight: 300;
+    font-size: 15px;
+}
+.server li img {
+    width: 56px;
+}
+.home-repairs {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+.list img {
+    width: 100%;
+}
+h1.title{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px;
+    font-weight: 300;
+    margin-top: 5rem;
+}
+h1.title.margin-top{
+    margin-top: 10rem;
+}
+.list span {
+    margin-top: 1rem;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.from {
+    width: 50%;
+    margin: auto;   
+    display: flex;
+    margin-top: 2rem;
+}
+.from input {
+    padding: 9px;
+    width: 90%;
+    margin: 0 0.5rem;
+}
+.from.type-work textarea {
+    width: 100%;
+    margin: 0 0.5rem;
+}
+.from button {
+    background: #ffd245;
+    padding: 7px 24px;
+    border-radius: 6px;
+    margin: auto;
+    cursor: pointer;
+}

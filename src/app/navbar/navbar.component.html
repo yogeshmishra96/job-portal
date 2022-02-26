@@ -1,24 +1,63 @@
-<div class="container-fluid">
-  <nav class="mt-1 navbar navbar-expand-lg bg-info navbar-dark danger-color rounded">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#"><img src="/assets/worker.png" height="50px" width="50px" alt="logo"> Jobs</a>
-  
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      
-      <form class="form-inline">
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item">
-            <a routerLink="/login/emp_login" class="nav-link p-3" > <i class="fa fa-lock"></i> LOGIN</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/register/emp_register" class="nav-link p-3 " ><i class="fa fa-address-book" aria-hidden="true"></i>REGISTER</a>
-          </li>
-        </ul>
-      </form>
+<div class="bg">
+  <div class="container">
+    <div class="nav-color navbar">
+      <a class="navbar-brand" href="#"><img src="/assets/logo.png" height="50px" width="50px" alt="logo"></a>
+      <nav class="navbar-expand-lg navbar-dark danger-color ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <form class="form-inline">
+            <ul class="navbar-nav my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link p-3" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-3" href="#">Register as a Professional</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/login/emp_login" class="nav-link p-3"> <i class="fa fa-lock"></i>Login</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/register/emp_register" class="nav-link p-3 "><i class="fa fa-address-book"
+                    aria-hidden="true"></i>Register</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
+  <div class="container">    
+    <div class="search-filed">
+      <h1>Home Services On Demand</h1>
+      <div class="input-fil">
+        <input type="text" id="location" placeholder="location..">
+        <input type="text" id="Search" placeholder="Search For Services ..">
+      </div>
+    </div>
+    <div class="server">
+      <li>
+        <img src="../../assets/Plumbers.png">
+        <span>Plumbers</span>
+      </li>
+      <li>
+        <img src="../../assets/Electricians.jpeg">
+        <span>Electricians</span>
+      </li>
+      <li>
+        <img src="../../assets/Maid.png">
+        <span>Maid</span>
+      </li>
+      <li>
+        <img src="../../assets/Helper.png">
+        <span>Helper</span>
+      </li>
+    </div>
+  </div>
+
+
+
 </div>
-
-
