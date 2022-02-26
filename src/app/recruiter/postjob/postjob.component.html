@@ -31,25 +31,25 @@
             <form class="form-horizontal" [formGroup]="postjobForm">
                 <div class=" form-group">
                     <label for="jobrole" class="col-sm-3 control-label"><b>JobRole</b></label>
-                    <input type="text" name="jobrole" id="jobrole" formControlName="jobRole" class="form-control" placeholder="JOBROLE">
+                    <input type="text" name="jobrole" id="jobrole" formControlName="jobRole" class="form-control" placeholder="Job role">
                 </div>
                 <div class=" form-group">
                     <label for="expRequired" class="col-sm-3 control-label"><b>Experience</b></label>
-                    <input type="text" name="expRequired" id="expRequired" formControlName="expRequired" class="form-control" placeholder="Exp">
+                    <input type="text" name="expRequired" id="expRequired" formControlName="expRequired" class="form-control" placeholder="Experience">
                 </div>
                 <div class=" form-group">
                     <label for="skills" class="col-sm-3 control-label"><b>Skills</b></label>
                     <input type="text" name="skills" id="skills" formControlName="skills" class="form-control" placeholder="Skills">
                 </div>
-                <div class=" form-group">
+               <!--<div class=" form-group">
                     <label for="education" class="col-sm-3 control-label"><b>JobRole</b></label>
                     <input type="text" name="education" id="education" formControlName="educationalQualifications" class="form-control" placeholder="Education">
-                </div>
+                </div>-->
                 <div class=" form-group">
                     <label for="jobDescription" class="col-sm-3 control-label"><b>Job Description</b></label>
                     <input type="text" name="jobDescription" id="jobDescription" formControlName="jobDescription" class="form-control" placeholder="Description">
                 </div>
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label class="control-label col-sm-3"><b>JobType</b></label>
                     <div class="col-sm-6">
                         <div class="row">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="form-group">
                     <button class="btn btn-success form-control" (click)="postajob()"><strong>Post Job</strong></button>
                 </div>
