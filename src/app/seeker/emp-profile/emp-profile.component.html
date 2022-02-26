@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <nav class=" mt-1 navbar navbar-expand-lg bg-info navbar-dark danger-color rounded">
     <!-- Brand -->
-    <img class="rounded-circle" src="/assets/job-logo.png" alt="somthing" id="logobrand"><a class="navbar-brand "
-      id="logo"><B>JOBS</B></a>
+    <img class="rounded-circle" src="/assets/worker.png" alt="somthing" id="logobrand"><a class="navbar-brand "
+      id="logo"><B> dailyWorkers.com</B></a>
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
       <!-- Dropdown -->
@@ -53,26 +53,27 @@
                 </form>
                 <button type="button" (click)="upload()">upload</button> -->
       </div>
+      <br>
       <ng-template #defaultavatar>
         <img src="../../../assets/avatar.jpg" alt="avatar" id="pimage">
       </ng-template>
       <input type="file" name="image" (change)="selectimage($event)" />
-      <button type="button" (click)="upload()">upload</button>
+      <button type="button" (click)="upload()">Upload Image</button>
       <br>
       <div class="col-sm-12 p-1">
-        <small><b>Interests:</b></small>
+        <small><b>Job Role:</b></small>
         <div class="col-sm-6" *ngFor="let interest of profileinfo.interests;let i=index">
-          <span>{{i+1}}.<b>{{interest}}</b></span>
+          <span>{{interest}}</span>
         </div>
       </div>
       <div class="col-sm-12 p-1">
         <small><b>Languages:</b></small>
         <div class="col-sm-6" *ngFor="let language of profileinfo.languages;let i=index">
-          <span>{{i+1}}.<b>{{language}}</b></span>
+          <span><b>{{language}}</b></span>
         </div>
       </div>
       <div class="col-sm-12 p-1">
-        <small><b>HomeTown:</b></small>
+        <small><b>Hometown:</b></small>
         <h6 class="ml-2">{{profileinfo.hometown}}</h6>
       </div>
     </div>
@@ -91,9 +92,9 @@
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#personal">Personal Details</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#prof">Professional Details</a>
-            </li>
+            </li>-->
           </ul>
 
           <!-- Tab panes -->
@@ -124,12 +125,12 @@
             </div>
             <div id="personal" class="container tab-pane fade"><br>
               <div class="col-sm-12">
-                <label for="mstatus"><b>MaritalStatus:</b></label><br>
+                <label for="mstatus"><b>Marital Status:</b></label><br>
                 <input type="text" name="mstatus" id="mstatus" class="form-control" value={{profileinfo.maritalStatus}}
                   disabled>
               </div>
               <div class="col-sm-12">
-                <label for="hometown"><b>HomeTown</b></label><br>
+                <label for="hometown"><b>Hometown:</b></label><br>
                 <input type="text" name="hometown" id="hometown" class="form-control" value={{profileinfo.hometown}}
                   disabled>
               </div>
@@ -139,7 +140,7 @@
                   value={{profileinfo.nationality}} disabled>
               </div>
               <div class="col-sm-12">
-                <label for="currentlocation"><b>CurrentLocation:</b></label><br>
+                <label for="currentlocation"><b>Current Location:</b></label><br>
                 <input type="text" name="currentlocation" id="currentlocation" class="form-control"
                   value={{profileinfo.currentLocation}} disabled>
               </div>
